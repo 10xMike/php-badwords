@@ -21,7 +21,7 @@
     $censorThis = $_GET["shitty"];
 
     #Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
-    $censored_p = str_replace($censorThis, "***", $p);
+    $censored_p = str_replace("shitty", "***", $p);
 
     echo "<p>" .$censored_p."</p>";
     echo 'Length of $censored_p is - ' . strlen($censored_p);
