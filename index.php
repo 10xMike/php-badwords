@@ -18,10 +18,10 @@
     echo 'Length of $p is - ' . strlen($p);
 
     #Una parola da censurare viene passata dall'utente tramite parametro GET. 
-    $censorThis = $_GET["shitty"];
+    $censorThis = $_GET["name"];
 
     #Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
-    $censored_p = str_replace("shitty", "***", $p);
+    $censored_p = str_replace($censorThis, "***", $p);
 
     echo "<p>" .$censored_p."</p>";
     echo 'Length of $censored_p is - ' . strlen($censored_p);
